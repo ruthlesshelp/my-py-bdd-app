@@ -7,7 +7,7 @@ This is a Python-based project using Behavior-Driven Development (BDD) with pyte
 ## Project Structure
 
 The project follows a clean BDD architecture with strict separation of concerns:
-- `src/` - Contains the main business logic (`financial_calculator.py`)
+- `src/` - Contains the main business logic (`class_1.py`)
 - `features/` - Gherkin feature files defining business scenarios (top-level directory)
 - `tests/step_definitions/` - Python step implementations for BDD scenarios
 - `tests/test_*_bdd.py` - BDD test files that link scenarios to step definitions
