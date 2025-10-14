@@ -6,6 +6,11 @@ Feature: Class1 Data Processing
     Background:
         Given I have a Class1 object
 
+    Scenario: Handle calling Function2 before Function1
+        When I call Function2
+        Then a RuntimeError should be raised
+        And the message should contain "function_1 must be called before function_2"
+
     Scenario: Handle invalid negative input
         When I call Function1 with value -1
         And I call Function2
